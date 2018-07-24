@@ -1,0 +1,96 @@
+Chainerのインストール方法をわかりやすく解説｜Mac・Linux・Windows
+https://www.sejuku.net/blog/42488
+
+Chainerで転移学習・特徴量抽出して類似度を測ってみた
+http://www.ie110704.net/2017/12/16/chainer%E3%81%A7%E8%BB%A2%E7%A7%BB%E5%AD%A6%E7%BF%92%E3%83%BB%E7%89%B9%E5%BE%B4%E9%87%8F%E6%8A%BD%E5%87%BA%E3%81%97%E3%81%A6%E9%A1%9E%E4%BC%BC%E5%BA%A6%E3%82%92%E6%B8%AC%E3%81%A3%E3%81%A6%E3%81%BF/
+
+
+
+visual studio community 2015をインストール
+
+
+conda create -n mychainer python=3.5
+activate chainer
+conda install notebook
+conda update -n base conda
+pip install chainer
+conda install pandas
+pip install matplotlib
+pip install scikit-learn
+pip install cython
+pip install scipy
+pip install Pillow
+pip install tqdm
+
+
+
+
+
+VGG16モデル
+http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
+http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.prototxt
+
+VGG19モデル
+http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_19_layers.caffemodel
+
+ResNet-50,101,152モデル
+https://github.com/KaimingHe/deep-residual-networks#models
+ResNet-50-deploy.prototxt
+ResNet-50-model.caffemodel
+
+
+
+
+【備忘録】Anacondaとpipのコマンドまとめ
+https://qiita.com/YanaErry/items/df6afd0571c8e7935dcb
+
+
+------------------------------------------------------
+
+conda create -n mykeras python=3.5
+activate mykeras
+conda install notebook
+conda install keras
+pip install --upgrade tensorflow
+#pip install --upgrade tensorflow-gpu
+
+# conda-forge リポジトリ（チャネルと言います）の scikit-learn をインストール
+conda install -c conda-forge scikit-learn
+
+# ウェブアプリケーションフレームワーク Flask のインストール
+conda install -c conda-forge flask
+
+# matplotlibをインストール
+pip install matplotlib
+
+
+
+
+
+
+
+
+
+conda info -e
+
+conda remove -n xxxxx --all
+
+activate xxxxx
+
+deactivate xxxxx
+
+
+
+
+
+WinApp
+
+GPUの確認
+dxdiag
+
+Apache bench のインストール
+XAMPP
+# ab -c 16 -n 2000 'http://x.x.x.x:5000/?sepal_l=6&sepal_w=2.2&petal_l=4&petal_w=1'
+# ab -c 16 -n 2000 'http://0.0.0.0:5000/?sepal_l=6&sepal_w=2.2&petal_l=4&petal_w=1'
+ab -c 16 -n 2000 localhost:5000/?sepal_l=6&sepal_w=2.2&petal_l=4&petal_w=1
+

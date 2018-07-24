@@ -1,0 +1,25 @@
+CMU-Multimodal SDK Version 1.0.0 (mmsdk)
+https://github.com/A2Zadeh/CMU-MultimodalSDK
+
+
+
+
+
+
+conda create -n mml python=3.5
+activate chainer
+conda install notebook
+conda install chainer
+conda install pandas
+conda install matplotlib
+conda install scikit-learn
+conda install cython
+conda install scipy
+conda install Pillow
+conda install tqdm
+
+pip install h5py validators tqdm
+conda install requests
+
+set PYTHONPATH=%PYTHONPATH%;C:\Users\B0063sugimori\02 MML\CMU-MultimodalSDK-master;C:\Users\B0063sugimori\02 MML\CMU-MultimodalSDK-master\mmsdk;C:\Users\B0063sugimori\02 MML\CMU-MultimodalSDK-master\mmsdk\mmdatasdk
+
